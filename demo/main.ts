@@ -25,7 +25,7 @@ const shake = createShakeEditor(editor, {
 // Later: shake.destroy();`,
   },
   react: {
-    file: 'App.tsx',
+    file: 'main.tsx',
     code: `import { ShakeEditor } from 'shake-editor/react';
 
 export function App() {
