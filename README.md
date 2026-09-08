@@ -2,6 +2,8 @@
 
 Power-mode particles and subtle shake feedback for text inputs, textareas, and contenteditable editors. Built with Vite and shipped as one dependency with first-class vanilla, React, Vue, and Web Component entry points.
 
+[Live demo](https://shake-editor.vercel.app) · [GitHub](https://github.com/honkinglin/shake-editor)
+
 The effect is lazy, SSR-friendly in the core/framework entry points, high-DPI aware, capped at 500 particles, and automatically respects `prefers-reduced-motion`.
 
 ## Install

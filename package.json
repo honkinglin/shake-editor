@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/honkinglin/shake-editor/issues"
   },
+  "homepage": "https://shake-editor.vercel.app",
   "keywords": [
     "editor",
     "power-mode",
