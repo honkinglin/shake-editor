@@ -1,10 +1,23 @@
 # shake-editor
 
+[![npm version](https://img.shields.io/npm/v/shake-editor?color=a98bff)](https://www.npmjs.com/package/shake-editor) [![CI](https://github.com/honkinglin/shake-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/honkinglin/shake-editor/actions/workflows/ci.yml) [![license](https://img.shields.io/npm/l/shake-editor)](./LICENSE)
+
 Power-mode particles and subtle shake feedback for text inputs, textareas, and contenteditable editors. Built with Vite and shipped as one dependency with first-class vanilla, React, Vue, and Web Component entry points.
 
 [Live demo](https://shake-editor.vercel.app) · [GitHub](https://github.com/honkinglin/shake-editor)
 
 The effect is lazy, SSR-friendly in the core/framework entry points, high-DPI aware, capped at 500 particles, and automatically respects `prefers-reduced-motion`.
+
+## Online examples
+
+Each example is a standalone Vite project that opens with a live preview and the relevant source file selected.
+
+| Stack | Source | Run online |
+| --- | --- | --- |
+| Vanilla TypeScript | [`examples/vanilla`](./examples/vanilla) | [![Open Vanilla in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/fork/github/honkinglin/shake-editor/tree/main/examples/vanilla?file=src/main.ts&title=shake-editor%20Vanilla) |
+| React | [`examples/react`](./examples/react) | [![Open React in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/fork/github/honkinglin/shake-editor/tree/main/examples/react?file=src/main.tsx&title=shake-editor%20React) |
+| Vue | [`examples/vue`](./examples/vue) | [![Open Vue in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/fork/github/honkinglin/shake-editor/tree/main/examples/vue?file=src/App.vue&title=shake-editor%20Vue) |
+| Web Component | [`examples/web-component`](./examples/web-component) | [![Open Web Component in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/fork/github/honkinglin/shake-editor/tree/main/examples/web-component?file=index.html&title=shake-editor%20Web%20Component) |
 
 ## Install
 

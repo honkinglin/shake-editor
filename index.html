@@ -3,22 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="shake-editor playground" />
-    <title>shake-editor</title>
+    <meta name="description" content="Power-mode particles and shake feedback for Vanilla, React, Vue, and Web Components." />
+    <meta name="theme-color" content="#09070e" />
+    <title>shake-editor — power mode for every editor</title>
   </head>
   <body>
-    <main class="shell">
-      <p class="eyebrow">POWER MODE, REBUILT</p>
-      <h1>shake-editor</h1>
-      <p class="lede">Tiny particles. Satisfying feedback. No framework lock-in.</p>
-      <section id="editor" class="editor-shell">
-        <div class="window-bar"><span></span><span></span><span></span><code>idea.ts</code></div>
-        <textarea autofocus spellcheck="false">const nextIdea = () => {
-  return 'type something brilliant';
-};</textarea>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="shake-editor home"><span>shake</span>-editor</a>
+      <nav aria-label="Main navigation">
+        <a href="#playground">Playground</a>
+        <a href="#frameworks">Frameworks</a>
+        <a href="https://github.com/honkinglin/shake-editor">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> FRAMEWORK-AGNOSTIC POWER MODE</p>
+          <h1>Make every<br />keystroke <em>hit.</em></h1>
+          <p class="lede">Tiny particles and satisfying shake feedback for any text editor. One package, zero runtime dependencies, four ways to use it.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#frameworks">Get started <span>↓</span></a>
+            <a class="button ghost" href="https://github.com/honkinglin/shake-editor">View on GitHub <span>↗</span></a>
+          </div>
+          <div class="install-pill"><span>$</span><code>npm install shake-editor</code><button data-copy="npm install shake-editor" aria-label="Copy install command">Copy</button></div>
+        </div>
+
+        <div id="playground" class="playground-wrap">
+          <div class="glow"></div>
+          <section id="editor" class="editor-shell" aria-label="Interactive shake-editor playground">
+            <div class="window-bar">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <code>power-mode.ts</code>
+              <span class="live"><i></i> LIVE</span>
+            </div>
+            <div class="line-numbers" aria-hidden="true">1<br />2<br />3<br />4<br />5<br />6</div>
+            <textarea autofocus spellcheck="false" aria-label="Try the shake effect">import { createShakeEditor } from 'shake-editor';
+
+const editor = document.querySelector('#editor');
+
+createShakeEditor(editor, {
+  colors: ['#ff4d8d', '#ffcc33', '#43e8d8']
+});</textarea>
+          </section>
+          <p class="try-hint"><span>⌨</span> Type in the editor to feel it</p>
+        </div>
       </section>
-      <p class="hint">Try typing in the editor</p>
+
+      <section class="stats" aria-label="Package highlights">
+        <div><strong>4</strong><span>entry points</span></div>
+        <div><strong>0</strong><span>runtime deps</span></div>
+        <div><strong>&lt; 4kb</strong><span>core gzip</span></div>
+        <div><strong>∞</strong><span>editor support</span></div>
+      </section>
+
+      <section id="frameworks" class="frameworks section">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> PICK YOUR FLAVOR</p>
+          <h2>One effect.<br />Every stack.</h2>
+          <p>Each adapter shares the same typed configuration and cleans itself up automatically.</p>
+        </div>
+
+        <div class="code-demo">
+          <div class="tabs" role="tablist" aria-label="Framework examples">
+            <button role="tab" aria-selected="true" data-framework="vanilla">Vanilla</button>
+            <button role="tab" aria-selected="false" data-framework="react">React</button>
+            <button role="tab" aria-selected="false" data-framework="vue">Vue</button>
+            <button role="tab" aria-selected="false" data-framework="web-component">Web Component</button>
+          </div>
+          <div class="code-window">
+            <div class="code-toolbar"><span id="code-file">main.ts</span><button id="copy-code">Copy code</button></div>
+            <pre><code id="framework-code"></code></pre>
+          </div>
+          <a id="stackblitz-link" class="stackblitz" href="#" target="_blank" rel="noreferrer">
+            <span>⚡</span><strong>Open this example in StackBlitz</strong><span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="features section">
+        <article><span>01</span><h3>Caret aware</h3><p>Particles originate at the real caret in inputs, textareas, and contenteditable surfaces.</p></article>
+        <article><span>02</span><h3>Lifecycle safe</h3><p>Canvas, listeners, animation frames, and component effects are cleaned up on destroy or unmount.</p></article>
+        <article><span>03</span><h3>Motion conscious</h3><p>High-DPI rendering looks crisp and reduced-motion preferences are respected by default.</p></article>
+      </section>
+
+      <section class="cta section">
+        <p class="eyebrow"><span></span> READY TO SHAKE?</p>
+        <h2>Give your editor<br />some feedback.</h2>
+        <div class="hero-actions">
+          <a class="button primary" href="https://stackblitz.com/fork/github/honkinglin/shake-editor/tree/main/examples/vanilla?file=src/main.ts&amp;title=shake-editor%20Vanilla">Try in StackBlitz <span>↗</span></a>
+          <a class="button ghost" href="https://github.com/honkinglin/shake-editor#install">Read the docs <span>↗</span></a>
+        </div>
+      </section>
     </main>
+
+    <footer><a class="brand" href="#top"><span>shake</span>-editor</a><p>MIT licensed. Inspired by activate-power-mode.</p><a href="https://github.com/honkinglin/shake-editor">Source on GitHub ↗</a></footer>
     <script type="module" src="/demo/main.ts"></script>
   </body>
 </html>

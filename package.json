@@ -63,6 +63,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "check": "npm run typecheck && npm run test && npm run build",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run check"
   },
   "peerDependencies": {

@@ -1,0 +1,9 @@
+{
+  "name": "shake-editor-example-web-component",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build" },
+  "dependencies": { "shake-editor": "^0.1.0" },
+  "devDependencies": { "vite": "^8.2.2" },
+  "stackblitz": { "startCommand": "npm run dev" }
+}

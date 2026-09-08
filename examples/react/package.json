@@ -1,0 +1,13 @@
+{
+  "name": "shake-editor-example-react",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build" },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "shake-editor": "^0.1.0"
+  },
+  "devDependencies": { "@vitejs/plugin-react": "^6.1.1", "vite": "^8.2.2" },
+  "stackblitz": { "startCommand": "npm run dev" }
+}
