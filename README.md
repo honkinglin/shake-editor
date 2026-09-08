@@ -8,7 +8,7 @@ Caret particles and subtle shake feedback for text inputs, textareas, and conten
 
 ## Demo
 
-<video src="https://raw.githubusercontent.com/honkinglin/shake-editor/main/shake-editor-demo.mp4" controls width="100%"></video>
+https://github.com/user-attachments/assets/a60d85fa-24bc-4074-95d9-dddc581b562e
 
 [Watch the demo video](./shake-editor-demo.mp4)
 
