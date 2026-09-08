@@ -12,7 +12,7 @@ describe('ShakeEditorElement', () => {
   });
 
   it('can register an additional custom tag', () => {
-    const name = 'power-mode-editor';
+    const name = 'custom-shake-editor';
     expect(defineShakeEditor(name)).toBe(customElements.get(name));
   });
 

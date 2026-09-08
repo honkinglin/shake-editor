@@ -1,7 +1,7 @@
 {
   "name": "shake-editor",
   "version": "0.1.0",
-  "description": "Framework-agnostic power-mode particles and shake effects for text editors, with React, Vue, and Web Component adapters.",
+  "description": "Framework-agnostic caret particles and shake effects for text editors, with React, Vue, and Web Component adapters.",
   "type": "module",
   "license": "MIT",
   "author": "shake-editor contributors",
@@ -15,7 +15,6 @@
   "homepage": "https://shake-editor.vercel.app",
   "keywords": [
     "editor",
-    "power-mode",
     "react",
     "vue",
     "web-component",

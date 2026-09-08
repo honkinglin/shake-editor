@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/shake-editor?color=a98bff)](https://www.npmjs.com/package/shake-editor) [![CI](https://github.com/honkinglin/shake-editor/actions/workflows/ci.yml/badge.svg)](https://github.com/honkinglin/shake-editor/actions/workflows/ci.yml) [![license](https://img.shields.io/npm/l/shake-editor)](./LICENSE)
 
-Power-mode particles and subtle shake feedback for text inputs, textareas, and contenteditable editors. Built with Vite and shipped as one dependency with first-class vanilla, React, Vue, and Web Component entry points.
+Caret particles and subtle shake feedback for text inputs, textareas, and contenteditable editors. Built with Vite and shipped as one dependency with first-class vanilla, React, Vue, and Web Component entry points.
 
 [Live demo](https://shake-editor.vercel.app) · [GitHub](https://github.com/honkinglin/shake-editor)
 
