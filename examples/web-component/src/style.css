@@ -1,7 +1,7 @@
 :root { color: #f7f4ff; background: #140b07; font: 16px system-ui; }
 body { margin: 0; } * { box-sizing: border-box; }
 main { width: min(720px, calc(100% - 32px)); margin: 10vh auto; }
-p { color: #f97316; font: 700 11px monospace; letter-spacing: .18em; }
+p { color: #f97316; font: 700 12px monospace; letter-spacing: .18em; }
 h1 { margin: 20px 0 40px; font-size: clamp(48px, 9vw, 82px); line-height: .9; letter-spacing: -.06em; }
 shake-editor { overflow: hidden; border: 1px solid #ffffff20; border-radius: 16px; background: #21120b; box-shadow: 0 35px 90px #000a; }
 textarea { width: 100%; min-height: 260px; resize: vertical; border: 0; outline: 0; padding: 28px; color: #fff3e8; background: transparent; caret-color: #f97316; font: 15px/1.8 monospace; }
