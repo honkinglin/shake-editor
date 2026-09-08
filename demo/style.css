@@ -41,8 +41,9 @@ button { color: inherit; font: inherit; }
 .nav nav a:hover, footer > a:hover { color: #fff; }
 
 .hero { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(50px, 8vw, 120px); width: min(1180px, calc(100% - 40px)); min-height: 680px; margin: 0 auto; padding: 80px 0 110px; }
-.eyebrow { display: flex; align-items: center; gap: 10px; margin: 0 0 24px; color: #a69faf; font: 500 12px/1 DM Mono, monospace; letter-spacing: .16em; }
-.eyebrow span { width: 24px; height: 1px; background: #9e7cff; box-shadow: 0 0 12px #9e7cff; }
+.eyebrow { display: flex; align-items: center; flex-wrap: nowrap; gap: 10px; margin: 0 0 24px; color: #a69faf; font: 500 12px/1.4 DM Mono, monospace; letter-spacing: .12em; }
+.eyebrow .eyebrow-line { flex: 0 0 24px; width: 24px; height: 1px; background: #9e7cff; box-shadow: 0 0 12px #9e7cff; }
+.eyebrow .eyebrow-label { flex: 0 0 auto; white-space: nowrap; }
 h1, h2 { margin: 0; font-weight: 800; letter-spacing: -.07em; }
 h1 { font-size: clamp(58px, 7.2vw, 104px); line-height: .91; }
 h1 em { color: #ffca46; font-style: normal; text-shadow: 0 0 50px #ffca4633; }
@@ -123,7 +124,7 @@ footer .brand { color: #f8f5ff; font-size: 16px; }
 
 @media (max-width: 560px) {
   .hero { min-height: auto; padding-bottom: 80px; }
-  h1 { font-size: 55px; }
+  h1 { font-size: clamp(44px, 14vw, 55px); }
   .editor-shell { transform: none; }
   .line-numbers { display: none; }
   .editor-shell { grid-template-columns: 1fr; }
