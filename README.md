@@ -6,6 +6,12 @@ Caret particles and subtle shake feedback for text inputs, textareas, and conten
 
 [Live demo](https://shake-editor.vercel.app) · [GitHub](https://github.com/honkinglin/shake-editor)
 
+## Demo
+
+<video src="https://raw.githubusercontent.com/honkinglin/shake-editor/main/shake-editor-demo.mp4" controls width="100%"></video>
+
+[Watch the demo video](./shake-editor-demo.mp4)
+
 The effect is lazy, SSR-friendly in the core/framework entry points, high-DPI aware, capped at 500 particles, and automatically respects `prefers-reduced-motion`.
 
 ## Online examples
