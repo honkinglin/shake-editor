@@ -1,0 +1,95 @@
+{
+  "name": "shake-editor",
+  "version": "0.1.0",
+  "description": "Framework-agnostic power-mode particles and shake effects for text editors, with React, Vue, and Web Component adapters.",
+  "type": "module",
+  "license": "MIT",
+  "author": "shake-editor contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honkinglin/shake-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/honkinglin/shake-editor/issues"
+  },
+  "keywords": [
+    "editor",
+    "power-mode",
+    "react",
+    "vue",
+    "web-component",
+    "vite"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./dist/web-component.js",
+    "./dist/web-component.cjs"
+  ],
+  "main": "./dist/core.cjs",
+  "module": "./dist/core.js",
+  "types": "./dist/core.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/core.d.ts",
+      "import": "./dist/core.js",
+      "require": "./dist/core.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./vue": {
+      "types": "./dist/vue.d.ts",
+      "import": "./dist/vue.js",
+      "require": "./dist/vue.cjs"
+    },
+    "./web-component": {
+      "types": "./dist/web-component.d.ts",
+      "import": "./dist/web-component.js",
+      "require": "./dist/web-component.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run clean && vite build && tsc -p tsconfig.build.json",
+    "build:site": "vite build --config vite.site.config.ts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "prepublishOnly": "npm run check"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "vue": ">=3.3"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "jsdom": "^27.4.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "rimraf": "^6.1.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0",
+    "vue": "^3.5.42"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
